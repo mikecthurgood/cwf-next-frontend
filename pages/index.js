@@ -2,25 +2,18 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head'
 import Styled from 'styled-components';
 import { Dispatch, State } from '../src/store/Store';
-import API from '../src/helpers/API'
-
+import { fetchWalls } from '../src/services/helpers/WallHelpers'
 import TopNav from '../src/components/Navigation/TopNav'
 import SecondaryNav from '../src/components/Navigation/SecondaryNav'
 import WallCard from '../src/components/WallCard'
 
+
 const Index = () => {
     const { signOut, signUpSuccess, user, userPostCode, walls } = useContext(State)
     const dispatch = useContext(Dispatch)
-
     useEffect(() => {
-        const fetchWalls = async () => {
-            const response = userPostCode ? await API.getWallsWithDistance(userPostCode).then(resp => resp.json()) : await API.getWalls().then(resp => resp.json())
-            const data = response.data.walls || response.data.wallsWithDistance
-            // if (!data.loggedIn && user.userId !== null) signOut()
-            return dispatch({type: 'setWalls', data: data.walls })
-        }
         try{
-            fetchWalls();
+            fetchWalls(dispatch, userPostCode);
         } catch (err) {
             console.log(err)
         }
@@ -65,6 +58,7 @@ export default Index;
 
 const WallCardOuterContainer = Styled.div`
     display: flex;
+    margin: 0;
     margin-top: 20px;
     flex-wrap: wrap;
     flex-direction: row;
