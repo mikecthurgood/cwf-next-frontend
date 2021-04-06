@@ -22,5 +22,8 @@
     "react-google-maps": "^9.4.5",
     "react-star-ratings": "^2.3.0",
     "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
