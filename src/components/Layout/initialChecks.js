@@ -1,4 +1,4 @@
-export default function checkUserData () {
+export default function checkUserData (dispatch) {
     const token = localStorage.getItem('token')
     const userId = localStorage.getItem('userId')
     const username = localStorage.getItem('userName')
