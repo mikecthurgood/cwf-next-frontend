@@ -9,10 +9,6 @@ const SingleWall = (props) => {
     const router = useRouter();
     const slug = router.query.wallSlug;
 
-    useEffect(() => {
-        console.log(`Single wall page ${slug}`)
-    }, [slug])
-
     return (
         <>
             <Head>
