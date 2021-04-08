@@ -2,7 +2,7 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const input = props => (
-  <InputContainer>
+  <InputContainer compact={props.compact} >
     {props.label && <label htmlFor={props.id}>{props.label}</label>}
     <input
       className={[
@@ -24,7 +24,7 @@ const input = props => (
 export default input;
 
 const InputContainer = Styled.div`
-    margin: 1rem 0;
+    margin: ${({compact}) => compact ? '0.4rem 0' : '1rem 0'};
     width: 100%;
     overflow: hidden;
 
