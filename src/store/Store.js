@@ -2,7 +2,7 @@ import React, { useReducer } from  'react';
 import reducer from './Reducer'
 
 const initialState = {
-    filterSelection: {top: true, bouldering: true, auto: true, lead: true},
+    filterSelection: [],
     loginError: false,
     loginMenuVisible: false,
     mobileMenuVisible: false,
