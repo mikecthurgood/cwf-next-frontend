@@ -5,12 +5,14 @@ import Input from './Inputs/Input';
 import { State, Dispatch } from '../../store/Store';
 import { loginHandler } from '../../services/helpers/AuthHelpers'
 
-const AuthForm = () => {
+const AuthForm = ({layout}) => {
   const { loginError } = useContext(State)
   const dispatch = useContext(Dispatch);
 
   const [userEmail, setUserEmail ] = useState('')
   const [password, setPassword ] = useState('')
+  
+  const compact = layout === 'compact';
 
   function inputChangeHandler (input, value) {
     if (input === 'userEmail') return setUserEmail(value)
@@ -34,12 +36,13 @@ const AuthForm = () => {
       
   return (
     <>
-      <AuthFormContainer>
+      <AuthFormContainer >
           <>
             <Form 
+              layout={layout}
               onSubmit={e => submitHandler(e)}
             >
-              <AuthButton>Register</AuthButton>
+              {!compact && <AuthButton>Register</AuthButton>}
               <FormInput>
                 <Input
                   id="userEmail"
@@ -48,6 +51,7 @@ const AuthForm = () => {
                   placeholder='Email'
                   onChange={inputChangeHandler}
                   value={userEmail}
+                  compact={compact}
                 />
               </FormInput>
               <FormInput>
@@ -58,9 +62,10 @@ const AuthForm = () => {
                   placeholder='Password'
                   onChange={inputChangeHandler}
                   value={password}
+                  compact={compact}
                 />
               </FormInput>
-              <AuthButton disabled={disabled} className={disabled ? 'disabled' : 'active'}>Login</AuthButton>
+              <AuthButton compact={compact} disabled={disabled} className={disabled ? 'disabled' : 'active'}>Login</AuthButton>
             </Form>
           </>
       </AuthFormContainer>
@@ -78,7 +83,7 @@ const AuthFormContainer = Styled.div`
 
 const Form = Styled.form`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ layout }) => layout === 'compact' ? 'column' : 'row' };
   font-weight: 400;
 
   h6 {
@@ -92,14 +97,12 @@ const Form = Styled.form`
 const FormInput = Styled.div`
   position: relative;
   top: -0.25rem;
-  margin: 0 0.3rem;
+  margin: ${({ layout }) => layout === 'compact' ? '0' : '0 0.3rem' };
   max-width: 9rem;
 `
 const AuthButton = Styled.button`
   height: 2rem;
-  position: relative;
-  top: 0.7rem;
-  margin: 0 0.3rem;
+  margin: ${({compact}) => compact ? '0 0.3rem' : '0.7rem 0.3rem'};
   background-color: #0f59c7;
   border-radius: 4px;
   border-width: 1px;
