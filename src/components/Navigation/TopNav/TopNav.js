@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import Styled from 'styled-components';
 import Link from 'next/link'
 
-import { Dispatch, State } from '../../../store/Store'
-import AuthForm from '../../Form/Login'
+import { Dispatch, State } from '../../../store/Store';
+import AuthForm from '../../Form/Login';
+import LoginMenu from '../../Menus/LoginMenu';
 
 const TopNav = () => {
 
@@ -16,22 +17,27 @@ const TopNav = () => {
 
     return (
         <NavBar>
-            <Link href='/'>
-              <a><MainLogo src='/clambr_logo_blue.png' alt="clambr logo" id='main-logo' /></a>
-            </Link>
-            {!user.username ?
-            <>
-                 <LoginControls>
-                    <AuthForm />
-                 </LoginControls>
-            </>
-                :
-                <div className="navbar-account-details"><p onClick={loginMenuToggle} className='nav-username'>Hi {user.username}!</p></div>
-            }
-{/* 
-            <div className={`login-menu ${user.username ? 'logged-in' : '' }`}>
+          <Link href='/'>
+            <a><MainLogo src='/clambr_logo_blue.png' alt="clambr logo" id='main-logo' /></a>
+          </Link>
+          {!user.username ?
+            <LoginControls>
+              <Desktop>
+                <AuthForm />
+              </Desktop>
+              <Mobile >
                 <img onClick={loginMenuToggle} src='/login-icon.jpg' alt="" />
-            </div> */}
+              </Mobile>
+            </LoginControls>
+            :
+            <LoggedInDetails>
+                <p onClick={loginMenuToggle} className='nav-username'>
+                  Hi {user.username}!
+                </p>
+                <img onClick={loginMenuToggle} src='/login-icon.jpg' alt="" />
+            </LoggedInDetails>
+          }
+          <LoginMenu />
         </NavBar >
     )
 }
@@ -51,47 +57,6 @@ const NavBar = Styled.div`
           flex-direction: column;
           justify-content: center;
         }
-
-      /* .hamburger-menu {
-        display: none;
-
-        @media only screen and (max-width: 566px) {
-          display: flex;
-          position: absolute;
-          left: 10px;
-          img {
-            width: 25px;
-          }
-          
-        }
-      }
-
-      .login-menu {
-        display: none;
-        position: absolute;
-        right: 10px;
-        top: 12px;
-        img {
-          width: 25px;
-          height: 26.16px;
-        }
-        
-        &.logged-in {
-          display: flex;
-        }
-
-        @media only screen and (max-width: 566px) {
-          display: flex;
-          position: absolute;
-          // &.logged-in {
-          //   display: none;
-          //   overflow: hidden;
-
-            img {
-              // display: none;
-            }
-          // }
-    } */
 `
 
 const MainLogo = Styled.img`
@@ -107,6 +72,48 @@ const MainLogo = Styled.img`
 const LoginControls = Styled.div`
   position: relative;
   right: 0.5rem;
+`
+
+const LoggedInDetails = Styled.div`
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1001;
+    background-color: #282c34;
+
+    img {
+      height: 50%;
+      margin: auto 1rem;
+    }
+
+    img, p {
+      cursor: pointer;
+    }
+`
+
+const Desktop = Styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`
+
+const Mobile = Styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  img {
+      height: 50%;
+      margin: auto 1rem;
+      float: right;
+      z-index: 1001;
+
+    }
+
+@media (min-width: 768px) {
+  display: none;
+}
 `
 
 
