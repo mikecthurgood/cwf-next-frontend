@@ -1,3 +1,6 @@
+import axios from 'axios';
+const url = 'https://clambr-api.herokuapp.com/graphql';
+// const url = 'http://localhost:8080/graphql';
 export const handleLogin = (authData) => {
     const promise = new Promise((resolve, reject) => {
         const { email, password } = authData.submitData
@@ -19,16 +22,16 @@ export const handleLogin = (authData) => {
             password: password
           }
         }
-        // fetch('http://localhost:8080/graphql', {
-          fetch('https://clambr-api.herokuapp.com/graphql', {
+          axios({
+          url,
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(graphqlQuery)
+          data: JSON.stringify(graphqlQuery)
         })
           .then(res => {
-            return res.json();
+            return res.data;
           })
           .then(resData => {
             if (resData.errors && resData.errors[0].status === 422) {
@@ -95,14 +98,14 @@ export const handleLogin = (authData) => {
             password: password
         }
         }
-        // const resData = await fetch('http://localhost:8080/graphql', {
-        const resData = await fetch('https://clambr-api.herokuapp.com/graphql', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(graphqlQuery)
-        }).then(res => {return res.json()})
+        const resData = await axios({
+          url,
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          data: JSON.stringify(graphqlQuery)
+        }).then(res => {return res.data})
         if (resData.errors && resData.errors.length > 0 && resData.errors[0].data.includes(423)) {
           const usernameError = new Error(
               "Username exists. Please choose another username"
