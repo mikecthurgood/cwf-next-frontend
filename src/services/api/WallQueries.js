@@ -1,8 +1,11 @@
+import axios from 'axios';
+const url = 'https://clambr-api.herokuapp.com/graphql';
+// const url = 'http://localhost:8080/graphql';
 const get = (graphqlQuery) => (
-    // fetch('http://localhost:8080/graphql', {
-    fetch('https://clambr-api.herokuapp.com/graphql', {
+    axios({
+        url,
         method: 'POST',
-        body: JSON.stringify(graphqlQuery),
+        data: JSON.stringify(graphqlQuery),
         headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token'),
             'Content-Type': 'application/json',
@@ -12,17 +15,17 @@ const get = (graphqlQuery) => (
 )
 
 const post = (graphqlQuery, token) =>(
-    // fetch('http://localhost:8080/graphql', {
-    fetch('https://clambr-api.herokuapp.com/graphql', {
+    axios({
+        url,
         method: 'POST',
-        body: JSON.stringify(graphqlQuery),
+        data: JSON.stringify(graphqlQuery),
         headers: {
-        Authorization: 'Bearer ' + token,
-        'Content-Type': 'application/json',
-        'Accept'      : `application/json`
+            Authorization: 'Bearer ' + token,
+            'Content-Type': 'application/json',
+            'Accept'      : `application/json`
         }
     })
-    )
+)
 
 const getWalls = async () => {
     const graphqlQuery = { query: `
