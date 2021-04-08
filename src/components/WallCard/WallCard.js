@@ -55,7 +55,7 @@ const Card = Styled.div`
     flex-grow: 1;
     flex-basis: 270px;
     height: 100%;
-    min-width: 500px;
+    min-width: 400px;
     margin: 2px;
     border-radius: 2px;
     border-style: solid;
