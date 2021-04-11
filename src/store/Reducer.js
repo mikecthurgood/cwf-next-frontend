@@ -11,16 +11,10 @@ const reducer = (state, action) => {
             return { ...state, mobileMenuVisible: action.data}
         case 'setSearchBarVisibility':
             return { ...state, searchBarVisible: action.data}
-        case 'setSearchFilter':
-            return { ...state, searchFilter: action.data}
-        case 'setScrollPosition':
-            return { ...state, scrollPosition: action.data}
         case 'setSignUpSuccess':
             return { ...state, signUpSuccess: action.data}
         case 'setSingleWall':
             return { ...state, singleWall: action.data}
-        case 'setSortInputVisibility':
-            return { ...state, sortInputVisible: action.data}
         case 'setUser':
             return { ...state, user: action.data}
         case 'setPostCode':
