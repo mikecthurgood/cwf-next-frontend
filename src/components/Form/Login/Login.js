@@ -1,9 +1,9 @@
 import React, {useState, useContext} from 'react';
 
 import Styled from 'styled-components';
-import Input from './Inputs/Input';
-import { State, Dispatch } from '../../store/Store';
-import { loginHandler } from '../../services/helpers/AuthHelpers'
+import Input from '../Inputs/Input';
+import { State, Dispatch } from '../../../store/Store';
+import { loginHandler } from '../../../services/helpers/AuthHelpers'
 
 const AuthForm = ({layout}) => {
   const { loginError } = useContext(State)
@@ -26,9 +26,11 @@ const AuthForm = ({layout}) => {
       password: password
     };
     const response = await loginHandler(dispatch, e, { submitData })
-
     if (response && response.error) {
-      return setErrorMessages(response.error)
+      dispatch({
+          type: 'setLoginError',
+          data: true,
+      })
     }
   }
   
@@ -97,7 +99,6 @@ const Form = Styled.form`
 const FormInput = Styled.div`
   position: relative;
   top: -0.25rem;
-  margin: ${({ layout }) => layout === 'compact' ? '0' : '0 0.3rem' };
   max-width: 9rem;
 `
 const AuthButton = Styled.button`

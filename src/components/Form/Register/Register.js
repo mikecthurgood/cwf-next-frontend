@@ -3,9 +3,9 @@ import { useRouter } from 'next/router'
 import { Link } from 'next/link';
 
 import Styled from 'styled-components';
-import Input from './Inputs/Input';
-import { required, length, email } from '../../util/validators';
-import { State } from '../../store/Store';
+import Input from '../Inputs/Input';
+import { required, length, email } from '../../../util/validators';
+import { State } from '../../../store/Store';
 
 
 
