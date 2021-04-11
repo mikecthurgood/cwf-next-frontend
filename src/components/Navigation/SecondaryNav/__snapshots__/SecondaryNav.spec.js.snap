@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secondary Nav render the component 1`] = `
+<div>
+  <div
+    class="SecondaryNav__NavBar-sc-1joq3q2-0 bbXYtC"
+  />
+</div>
+`;

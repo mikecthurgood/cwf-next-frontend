@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store component should render store 1`] = `
+<h1>
+  Hello I'm a heading
+</h1>
+`;

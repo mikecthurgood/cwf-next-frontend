@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Top Nav should dispatch close modal event when clicked 1`] = `
+<div>
+  <div
+    class="TopNav__NavBar-sc-1nw686k-0 dEnuba"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="clambr logo"
+        class="TopNav__MainLogo-sc-1nw686k-1 fcEOnI"
+        id="main-logo"
+        src="/clambr_logo_blue.png"
+      />
+    </a>
+    <div
+      class="TopNav__LoginControls-sc-1nw686k-2 kFMRta"
+    >
+      <div
+        class="TopNav__Desktop-sc-1nw686k-4 eQBJB"
+      >
+        <div
+          class="Login__AuthFormContainer-sc-1ryrs0l-0 hBRKZY"
+        >
+          <form
+            class="Login__Form-sc-1ryrs0l-1 SwwBW"
+          >
+            <button
+              class="Login__AuthButton-sc-1ryrs0l-3 izDnDC"
+            >
+              Register
+            </button>
+            <div
+              class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+            >
+              <div
+                class="Input__InputContainer-sc-1wyp7tv-0 kIYPqy"
+              >
+                <input
+                  class="invalid untouched "
+                  data-testid="form-input"
+                  id="userEmail"
+                  placeholder="Email"
+                  type="email"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+            >
+              <div
+                class="Input__InputContainer-sc-1wyp7tv-0 kIYPqy"
+              >
+                <input
+                  class="invalid untouched "
+                  data-testid="form-input"
+                  id="password"
+                  placeholder="Password"
+                  type="password"
+                  value=""
+                />
+              </div>
+            </div>
+            <button
+              class="Login__AuthButton-sc-1ryrs0l-3 izDnDC disabled"
+              disabled=""
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="TopNav__Mobile-sc-1nw686k-5 bLBDIb"
+      >
+        <img
+          alt=""
+          data-testid="login-menu-toggle"
+          src="/login-icon.jpg"
+        />
+      </div>
+    </div>
+    <div
+      class="LoginMenu__LoginMenuContainer-sc-1ec36x2-0 guOatf  logged-out"
+    >
+      <div
+        class="login__menu-login-register"
+      >
+        <h5
+          data-testid="login-form-control"
+        >
+          Login
+        </h5>
+        <div
+          class="LoginMenu__AuthFormContainer-sc-1ec36x2-1 bIHWLO"
+        >
+          <div
+            class="Login__AuthFormContainer-sc-1ryrs0l-0 hBRKZY"
+          >
+            <form
+              class="Login__Form-sc-1ryrs0l-1 NjHaG"
+            >
+              <div
+                class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+              >
+                <div
+                  class="Input__InputContainer-sc-1wyp7tv-0 eyXXuZ"
+                >
+                  <input
+                    class="invalid untouched "
+                    data-testid="form-input"
+                    id="userEmail"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+              >
+                <div
+                  class="Input__InputContainer-sc-1wyp7tv-0 eyXXuZ"
+                >
+                  <input
+                    class="invalid untouched "
+                    data-testid="form-input"
+                    id="password"
+                    placeholder="Password"
+                    type="password"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="Login__AuthButton-sc-1ryrs0l-3 emqpgl disabled"
+                disabled=""
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+        <a
+          href="/signup"
+        >
+          <h5>
+            Register
+          </h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Top Nav should greet the user 1`] = `
+<div>
+  <div
+    class="TopNav__NavBar-sc-1nw686k-0 dEnuba"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="clambr logo"
+        class="TopNav__MainLogo-sc-1nw686k-1 fcEOnI"
+        id="main-logo"
+        src="/clambr_logo_blue.png"
+      />
+    </a>
+    <div
+      class="TopNav__LoggedInDetails-sc-1nw686k-3 kjTTSP"
+    >
+      <p
+        class="nav-username"
+      >
+        Hi 
+        Mr Test
+        !
+      </p>
+      <img
+        alt=""
+        data-testid="user-icon"
+        src="/login-icon.jpg"
+      />
+    </div>
+    <div
+      class="LoginMenu__LoginMenuContainer-sc-1ec36x2-0 guOatf  "
+    >
+      <div
+        class="login__menu-login-register"
+      >
+        <h5>
+          Log out
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+`;

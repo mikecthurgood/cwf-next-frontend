@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Text Area render the component 1`] = `
+<div>
+  <div
+    class="TextArea__InputContainer-zzvw0m-0 epbDDn"
+  >
+    <textarea
+      class="invalid untouched"
+      data-testid="form-text-area"
+    />
+  </div>
+</div>
+`;
+
+exports[`Form Text Area render the component 2`] = `
+<div>
+  <div
+    class="TextArea__InputContainer-zzvw0m-0 epbDDn"
+  >
+    <label>
+      test label
+    </label>
+    <textarea
+      class="valid touched"
+      data-testid="form-text-area"
+    />
+  </div>
+</div>
+`;

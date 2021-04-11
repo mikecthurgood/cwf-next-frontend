@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Menu should render the component 1`] = `
+<div>
+  <div
+    class="FilterMenu__BackgroundFade-sc-1fra4qv-0 jTtCeR"
+  />
+  <div
+    class="FilterMenu__FilterMenuContainer-sc-1fra4qv-1 cMfzVK"
+  >
+    <label
+      class="filter__menu-title"
+    >
+      <label
+        class="filter__menu-icon"
+      >
+        <strong>
+          +
+        </strong>
+      </label>
+      <strong>
+        Sort & Filter
+      </strong>
+    </label>
+    <div
+      class="filter__menu-filter-container "
+      data-testid="filter-menu"
+    >
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="WallFilter__WallFilterContainer-sc-1gmh8t7-0 dlCtk"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Wall Type
+            </strong>
+          </label>
+          <form>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Bouldering:
+              <input
+                name="bouldering"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Top Roping:
+              <input
+                name="top"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Lead:
+              <input
+                name="lead"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Auto Belay:
+              <input
+                name="auto"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="PostcodeSort__PostCodeSortContainer-kmt73j-0 lcmzeg"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Sort by distance
+            </strong>
+          </label>
+          <div
+            class="change-post-code-container"
+          >
+            <form
+              autocomplete="off"
+              class="filter__menu-sort-form visible"
+            >
+              <input
+                class="filter__menu-sort-input"
+                name="searchInput"
+                placeholder="Enter Postcode"
+                type="text"
+                value=""
+              />
+              <input
+                class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+                type="submit"
+                value="Set"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Filter Menu should set the menu to visible on click 1`] = `
+<div>
+  <div
+    class="FilterMenu__BackgroundFade-sc-1fra4qv-0 jTtCeR visible"
+  />
+  <div
+    class="FilterMenu__FilterMenuContainer-sc-1fra4qv-1 cMfzVK"
+  >
+    <label
+      class="filter__menu-title"
+    >
+      <label
+        class="filter__menu-icon"
+      >
+        <strong>
+          -
+        </strong>
+      </label>
+      <strong>
+        Sort & Filter
+      </strong>
+    </label>
+    <div
+      class="filter__menu-filter-container visible"
+      data-testid="filter-menu"
+    >
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="WallFilter__WallFilterContainer-sc-1gmh8t7-0 dlCtk"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Wall Type
+            </strong>
+          </label>
+          <form>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Bouldering:
+              <input
+                name="bouldering"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Top Roping:
+              <input
+                name="top"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Lead:
+              <input
+                name="lead"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Auto Belay:
+              <input
+                name="auto"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="PostcodeSort__PostCodeSortContainer-kmt73j-0 lcmzeg"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Sort by distance
+            </strong>
+          </label>
+          <div
+            class="change-post-code-container"
+          >
+            <form
+              autocomplete="off"
+              class="filter__menu-sort-form visible"
+            >
+              <input
+                class="filter__menu-sort-input"
+                name="searchInput"
+                placeholder="Enter Postcode"
+                type="text"
+                value=""
+              />
+              <input
+                class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+                type="submit"
+                value="Set"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

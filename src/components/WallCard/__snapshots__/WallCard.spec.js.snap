@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wallcard should render a wall with ratings correctly 1`] = `
+<div>
+  <div
+    class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+  >
+    <a
+      href="/walls/test"
+    >
+      <div
+        class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+      >
+        <h5>
+          Test Wall 1
+        </h5>
+        <h4>
+          (
+          1.5
+           miles)
+        </h4>
+      </div>
+      <div
+        class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+      >
+        <picture
+          class="wall-image"
+        >
+          <source
+            srcset="/testimageurl"
+            type="image/webp"
+          />
+          <source
+            srcset="/testimageurl"
+            type="image/jpeg"
+          />
+          <img
+            alt=""
+            class="wall-image"
+            src="/testimageurl"
+          />
+        </picture>
+      </div>
+      <div
+        class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+      >
+        <div
+          class="wall-details-1"
+        >
+          <p>
+            <strong>
+              Location:
+            </strong>
+             
+            test
+          </p>
+          <strong>
+            User Rating:
+          </strong>
+          <br />
+          <strong>
+            <p
+              style="color: red;"
+            >
+              Bouldering Only
+            </p>
+          </strong>
+        </div>
+        <div
+          class="wall-details-2"
+        >
+          <p>
+            <strong>
+              Weekdays:
+            </strong>
+            <br />
+            Open: 
+            10:00
+            <br />
+            Close: 
+            22:00
+          </p>
+          <p>
+            <strong>
+              Weekends:
+            </strong>
+            <br />
+            Open: 
+            10:00
+            <br />
+            Close: 
+            21:00
+          </p>
+        </div>
+      </div>
+      <button
+        class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+      >
+        View Details and Reviews
+      </button>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Wallcard should render a wall without ratings correctly 1`] = `
+<div>
+  <div
+    class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+  >
+    <a
+      href="/walls/test"
+    >
+      <div
+        class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+      >
+        <h5>
+          Test Wall 2
+        </h5>
+        <h4>
+          (
+          1.5
+           miles)
+        </h4>
+      </div>
+      <div
+        class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+      >
+        <picture
+          class="wall-image"
+        >
+          <source
+            srcset="/testimageurl"
+            type="image/webp"
+          />
+          <source
+            srcset="/testimageurl"
+            type="image/jpeg"
+          />
+          <img
+            alt=""
+            class="wall-image"
+            src="/testimageurl"
+          />
+        </picture>
+      </div>
+      <div
+        class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+      >
+        <div
+          class="wall-details-1"
+        >
+          <p>
+            <strong>
+              Location:
+            </strong>
+             
+            test
+          </p>
+          <strong>
+            User Rating:
+          </strong>
+          <br />
+          No ratings yet
+          <strong>
+            <p
+              style="color: red;"
+            >
+              Bouldering Only
+            </p>
+          </strong>
+        </div>
+        <div
+          class="wall-details-2"
+        >
+          <p>
+            <strong>
+              Weekdays:
+            </strong>
+            <br />
+            Open: 
+            10:00
+            <br />
+            Close: 
+            22:00
+          </p>
+          <p>
+            <strong>
+              Weekends:
+            </strong>
+            <br />
+            Open: 
+            10:00
+            <br />
+            Close: 
+            21:00
+          </p>
+        </div>
+      </div>
+      <button
+        class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+      >
+        View Details and Reviews
+      </button>
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Form renders the component 1`] = `
+<div>
+  <div
+    class="Login__AuthFormContainer-sc-1ryrs0l-0 hBRKZY"
+  >
+    <form
+      class="Login__Form-sc-1ryrs0l-1 SwwBW"
+    >
+      <button
+        class="Login__AuthButton-sc-1ryrs0l-3 izDnDC"
+      >
+        Register
+      </button>
+      <div
+        class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+      >
+        <div
+          class="Input__InputContainer-sc-1wyp7tv-0 kIYPqy"
+        >
+          <input
+            class="invalid untouched "
+            data-testid="form-input"
+            id="userEmail"
+            placeholder="Email"
+            type="email"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+      >
+        <div
+          class="Input__InputContainer-sc-1wyp7tv-0 kIYPqy"
+        >
+          <input
+            class="invalid untouched "
+            data-testid="form-input"
+            id="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        class="Login__AuthButton-sc-1ryrs0l-3 izDnDC disabled"
+        disabled=""
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Login Form renders the component in compact view 1`] = `
+<div>
+  <div
+    class="Login__AuthFormContainer-sc-1ryrs0l-0 hBRKZY"
+  >
+    <form
+      class="Login__Form-sc-1ryrs0l-1 NjHaG"
+    >
+      <div
+        class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+      >
+        <div
+          class="Input__InputContainer-sc-1wyp7tv-0 eyXXuZ"
+        >
+          <input
+            class="invalid untouched "
+            data-testid="form-input"
+            id="userEmail"
+            placeholder="Email"
+            type="email"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="Login__FormInput-sc-1ryrs0l-2 iNdDlt"
+      >
+        <div
+          class="Input__InputContainer-sc-1wyp7tv-0 eyXXuZ"
+        >
+          <input
+            class="invalid untouched "
+            data-testid="form-input"
+            id="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        class="Login__AuthButton-sc-1ryrs0l-3 emqpgl disabled"
+        disabled=""
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
+`;

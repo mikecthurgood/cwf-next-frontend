@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Input should render the component 1`] = `
+<div>
+  <div
+    class="Input__InputContainer-sc-1wyp7tv-0 kIYPqy"
+  >
+    <input
+      class="invalid untouched "
+      data-testid="form-input"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Form Input should render the component 2`] = `
+<div>
+  <div
+    class="Input__InputContainer-sc-1wyp7tv-0 kIYPqy"
+  >
+    <label>
+      test label
+    </label>
+    <input
+      class="valid touched errorFlash"
+      data-testid="form-input"
+      value=""
+    />
+  </div>
+</div>
+`;
