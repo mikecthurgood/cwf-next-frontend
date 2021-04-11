@@ -2,21 +2,22 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const TextArea = props => (
-  <InputContainer>
-    {props.label && <label htmlFor={props.id}>{props.label}</label>}
-    <textarea
-      className={[
-        !props.valid ? 'invalid' : 'valid',
-        props.touched ? 'touched' : 'untouched'
-      ].join(' ')}
-      id={props.id}
-      rows={props.rows}
-      required={props.required}
-      value={props.value}
-      onChange={e => props.onChange(props.id, e.target.value)}
-      onBlur={props.onBlur}
-      />
-  </InputContainer>
+    <InputContainer>
+        {props.label && <label htmlFor={props.id}>{props.label}</label>}
+        <textarea
+            data-testid='form-text-area'
+            className={[
+                !props.valid ? 'invalid' : 'valid',
+                props.touched ? 'touched' : 'untouched'
+            ].join(' ')}
+            id={props.id}
+            rows={props.rows}
+            required={props.required}
+            value={props.value}
+            onChange={e => props.onChange(props.id, e.target.value)}
+            onBlur={props.onBlur}
+        />
+    </InputContainer>
 );
 
 export default TextArea;

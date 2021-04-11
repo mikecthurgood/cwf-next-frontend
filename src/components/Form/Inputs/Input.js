@@ -5,18 +5,19 @@ const input = props => (
   <InputContainer compact={props.compact} >
     {props.label && <label htmlFor={props.id}>{props.label}</label>}
     <input
-      className={[
-        !props.valid ? 'invalid' : 'valid',
-        props.touched ? 'touched' : 'untouched',
-        props.loginError ? 'errorFlash' : ''
-      ].join(' ')}
-      type={props.type}
-      id={props.id}
-      required={props.required}
-      value={props.value}
-      placeholder={props.placeholder}
-      onChange={e => props.onChange(props.id, e.target.value, e.target.files)}
-      onBlur={props.onBlur}
+        data-testid='form-input'
+        className={[
+            !props.valid ? 'invalid' : 'valid',
+            props.touched ? 'touched' : 'untouched',
+            props.loginError ? 'errorFlash' : ''
+        ].join(' ')}
+        type={props.type}
+        id={props.id}
+        required={props.required}
+        value={props.value}
+        placeholder={props.placeholder}
+        onChange={e => props.onChange(props.id, e.target.value, e.target.files)}
+        onBlur={props.onBlur}
     />
   </InputContainer>
 );
