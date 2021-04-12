@@ -8,7 +8,7 @@ import LoginMenu from '../../Menus/LoginMenu';
 
 const TopNav = () => {
 
-    const { loginError, user, loginMenuVisible } = useContext(State)
+    const { user, loginMenuVisible } = useContext(State)
     const dispatch = useContext(Dispatch)
 
     function loginMenuToggle () {
@@ -26,7 +26,7 @@ const TopNav = () => {
                 <AuthForm />
               </Desktop>
               <Mobile >
-                <img onClick={loginMenuToggle} src='/login-icon.jpg' alt="" />
+                <img onClick={loginMenuToggle} src='/login-icon.jpg' alt="" data-testid='login-menu-toggle' />
               </Mobile>
             </LoginControls>
             :
@@ -34,7 +34,7 @@ const TopNav = () => {
                 <p onClick={loginMenuToggle} className='nav-username'>
                   Hi {user.username}!
                 </p>
-                <img onClick={loginMenuToggle} src='/login-icon.jpg' alt="" />
+                <img onClick={loginMenuToggle} src='/login-icon.jpg' alt="" data-testid='user-icon' />
             </LoggedInDetails>
           }
           <LoginMenu />
