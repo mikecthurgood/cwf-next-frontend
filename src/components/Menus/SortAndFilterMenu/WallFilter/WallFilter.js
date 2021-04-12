@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import Styled from 'styled-components';
-import { State, Dispatch } from '../../../store/Store';
+import { State, Dispatch } from '../../../../store/Store';
 
 const WallFilter = () => {
     const { filterSelection } = useContext(State);

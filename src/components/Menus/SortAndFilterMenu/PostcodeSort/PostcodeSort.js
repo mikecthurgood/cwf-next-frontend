@@ -1,73 +1,75 @@
 import React, {useState, useContext, useEffect} from 'react';
 import Styled from 'styled-components';
-import { Dispatch, State } from '../../../store/Store';
+import { Dispatch, State } from '../../../../store/Store';
 
 const PostcodeSort = ({setFilterMenuVisibility}) => {
 
     const dispatch = useContext(Dispatch)
-    const { userPostCode } = useContext(State)
-    const [postCodeInput, setPostCodeInput] = useState(userPostCode)
-    const [postCodeInputVisible, setPostCodeInputVisible] = useState(true)
+    const { userPostcode } = useContext(State)
+    const [postcodeInput, setPostcodeInput] = useState(userPostcode)
+    const [postcodeInputVisible, setPostcodeInputVisible] = useState(true)
 
     useEffect(() => {
-        if (userPostCode) {
-            setPostCodeInputVisible(false)
+        if (userPostcode) {
+            setPostcodeInputVisible(false)
         }
-    },[userPostCode])
+    },[userPostcode])
 
-    function handleSetPostCode (e) {
+    function handleSetPostcode (e) {
         e.preventDefault()
-        setPostCodeInputVisible(false)
+        setPostcodeInputVisible(false)
         let newPostcode
         const postcodeRegEx = /[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}/i; 
-        if (!postCodeInput) {
+        if (!postcodeInput) {
             newPostcode = ''
             localStorage.removeItem('userPostcode')
-        }
-        const validPostcode = postcodeRegEx.test(postCodeInput); 
-        if (validPostcode) {
-            newPostcode = postCodeInput
-            localStorage.setItem('userPostcode', postCodeInput)
             setFilterMenuVisibility()
-            dispatch({ type: 'setPostCode', data: newPostcode })
+            dispatch({ type: 'setPostcode', data: newPostcode })
+        }
+        const validPostcode = postcodeRegEx.test(postcodeInput); 
+        if (validPostcode) {
+            newPostcode = postcodeInput
+            localStorage.setItem('userPostcode', postcodeInput)
+            setFilterMenuVisibility()
+            dispatch({ type: 'setPostcode', data: newPostcode })
         }
     }
 
-    function handlePostCodeChange (e) {
-        setPostCodeInput(e.target.value)
+    function handlePostcodeChange (e) {
+        setPostcodeInput(e.target.value)
     }
 
     function clearPostcode () {
-        setPostCodeInput('')
+        setPostcodeInput('')
         localStorage.removeItem('userPostcode')
-        dispatch({ type: 'setPostCode', data: '' })
-        setPostCodeInputVisible(true)
+        dispatch({ type: 'setPostcode', data: '' })
+        setPostcodeInputVisible(true)
     }
 
     return (
-        <PostCodeSortContainer>
+        <PostcodeSortContainer>
             <label className='filter__menu-form-heading'>
                     <strong>Sort by distance</strong>
             </label>
                 <>
                     <div className='change-post-code-container'>
-                        {userPostCode && ( 
-                            <p className='postcode-confirmation'>Sorted by distance from <strong>{userPostCode.toUpperCase()}</strong></p>
+                        {userPostcode && ( 
+                            <p className='postcode-confirmation'>Sorted by distance from <strong>{userPostcode.toUpperCase()}</strong></p>
                         )}
-                        {userPostCode && (
+                        {userPostcode && (
                             <span>
                                 <p className='changePostcode' onClick={() => {
-                                    setPostCodeInputVisible(!postCodeInputVisible)
+                                    setPostcodeInputVisible(!postcodeInputVisible)
                                 }}>
-                                    {postCodeInputVisible ? 'Cancel' : 'Change'}
+                                    {postcodeInputVisible ? 'Cancel' : 'Change'}
                                 </p>
-                                {!postCodeInputVisible && (
+                                {!postcodeInputVisible && (
                                     <p className='changePostcode' onClick={clearPostcode}>{`Clear`}</p>
                                 )}
                             </span>
                         )}
-                        <form className={`filter__menu-sort-form ${postCodeInputVisible ? 'visible' : ''}`}
-                            onSubmit={handleSetPostCode} 
+                        <form className={`filter__menu-sort-form ${postcodeInputVisible ? 'visible' : ''}`}
+                            onSubmit={handleSetPostcode} 
                             autoComplete="off"
                         >
                             <input
@@ -75,21 +77,21 @@ const PostcodeSort = ({setFilterMenuVisibility}) => {
                                 placeholder='Enter Postcode' 
                                 name='searchInput' 
                                 className={`filter__menu-sort-input`} 
-                                value={postCodeInput}
-                                onChange={handlePostCodeChange} 
+                                value={postcodeInput}
+                                onChange={handlePostcodeChange} 
                             />
                              <SubmitButton type="submit" value='Set' />
                         </form>
                     </div>
                 </>
                
-        </PostCodeSortContainer>
+        </PostcodeSortContainer>
     )
 }
 
 export default PostcodeSort
 
-const PostCodeSortContainer = Styled.div`
+const PostcodeSortContainer = Styled.div`
     .filter__menu-sort-form {
         display: none;
         margin-bottom: -45px;
