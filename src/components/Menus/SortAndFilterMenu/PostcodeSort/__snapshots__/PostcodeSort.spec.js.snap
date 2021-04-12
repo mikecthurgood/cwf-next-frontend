@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Postcode Sort should clear the postcode when "clear" button is clicked 1`] = `
+<div>
+  <div
+    class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+  >
+    <label
+      class="filter__menu-form-heading"
+    >
+      <strong>
+        Sort by distance
+      </strong>
+    </label>
+    <div
+      class="change-post-code-container"
+    >
+      <p
+        class="postcode-confirmation"
+      >
+        Sorted by distance from 
+        <strong>
+          TE5 T1NG
+        </strong>
+      </p>
+      <span>
+        <p
+          class="changePostcode"
+        >
+          Cancel
+        </p>
+      </span>
+      <form
+        autocomplete="off"
+        class="filter__menu-sort-form visible"
+      >
+        <input
+          class="filter__menu-sort-input"
+          name="searchInput"
+          placeholder="Enter Postcode"
+          type="text"
+          value=""
+        />
+        <input
+          class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+          type="submit"
+          value="Set"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Postcode Sort should display the user postcode if set and give option to change it 1`] = `
+<div>
+  <div
+    class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+  >
+    <label
+      class="filter__menu-form-heading"
+    >
+      <strong>
+        Sort by distance
+      </strong>
+    </label>
+    <div
+      class="change-post-code-container"
+    >
+      <p
+        class="postcode-confirmation"
+      >
+        Sorted by distance from 
+        <strong>
+          TE5 T1NG
+        </strong>
+      </p>
+      <span>
+        <p
+          class="changePostcode"
+        >
+          Change
+        </p>
+        <p
+          class="changePostcode"
+        >
+          Clear
+        </p>
+      </span>
+      <form
+        autocomplete="off"
+        class="filter__menu-sort-form "
+      >
+        <input
+          class="filter__menu-sort-input"
+          name="searchInput"
+          placeholder="Enter Postcode"
+          type="text"
+          value="te5 t1ng"
+        />
+        <input
+          class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+          type="submit"
+          value="Set"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Postcode Sort should open the postcode input if "change" button is clicked 1`] = `
+<div>
+  <div
+    class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+  >
+    <label
+      class="filter__menu-form-heading"
+    >
+      <strong>
+        Sort by distance
+      </strong>
+    </label>
+    <div
+      class="change-post-code-container"
+    >
+      <p
+        class="postcode-confirmation"
+      >
+        Sorted by distance from 
+        <strong>
+          TE5 T1NG
+        </strong>
+      </p>
+      <span>
+        <p
+          class="changePostcode"
+        >
+          Cancel
+        </p>
+      </span>
+      <form
+        autocomplete="off"
+        class="filter__menu-sort-form visible"
+      >
+        <input
+          class="filter__menu-sort-input"
+          name="searchInput"
+          placeholder="Enter Postcode"
+          type="text"
+          value="te5 t1ng"
+        />
+        <input
+          class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+          type="submit"
+          value="Set"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Postcode Sort should render the component 1`] = `
+<div>
+  <div
+    class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+  >
+    <label
+      class="filter__menu-form-heading"
+    >
+      <strong>
+        Sort by distance
+      </strong>
+    </label>
+    <div
+      class="change-post-code-container"
+    >
+      
+      
+      <form
+        autocomplete="off"
+        class="filter__menu-sort-form visible"
+      >
+        <input
+          class="filter__menu-sort-input"
+          name="searchInput"
+          placeholder="Enter Postcode"
+          type="text"
+          value=""
+        />
+        <input
+          class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+          type="submit"
+          value="Set"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;

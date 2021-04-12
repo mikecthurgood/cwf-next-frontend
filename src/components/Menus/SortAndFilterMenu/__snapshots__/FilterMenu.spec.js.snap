@@ -95,7 +95,7 @@ exports[`Filter Menu should render the component 1`] = `
         class="filter__menu-filter-item"
       >
         <div
-          class="PostcodeSort__PostCodeSortContainer-kmt73j-0 lcmzeg"
+          class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
         >
           <label
             class="filter__menu-form-heading"
@@ -227,7 +227,7 @@ exports[`Filter Menu should set the menu to visible on click 1`] = `
         class="filter__menu-filter-item"
       >
         <div
-          class="PostcodeSort__PostCodeSortContainer-kmt73j-0 lcmzeg"
+          class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
         >
           <label
             class="filter__menu-form-heading"

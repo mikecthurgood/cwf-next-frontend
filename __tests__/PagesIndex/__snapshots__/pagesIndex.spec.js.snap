@@ -1,0 +1,1614 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages index renders the component with a loading screen if no walls are available 1`] = `
+<div>
+  <div
+    class="TopNav__NavBar-sc-1nw686k-0 dEnuba"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="clambr logo"
+        class="TopNav__MainLogo-sc-1nw686k-1 fcEOnI"
+        id="main-logo"
+        src="/clambr_logo_blue.png"
+      />
+    </a>
+    <div
+      class="TopNav__LoggedInDetails-sc-1nw686k-3 kjTTSP"
+    >
+      <p
+        class="nav-username"
+      >
+        Hi 
+        Old Captain Testy
+        !
+      </p>
+      <img
+        alt=""
+        data-testid="user-icon"
+        src="/login-icon.jpg"
+      />
+    </div>
+    <div
+      class="LoginMenu__LoginMenuContainer-sc-1ec36x2-0 guOatf  "
+    >
+      <div
+        class="login__menu-login-register"
+      >
+        <h5>
+          Log out
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div
+    class="SecondaryNav__NavBar-sc-1joq3q2-0 bbXYtC"
+  />
+  <div
+    class="FilterMenu__BackgroundFade-sc-1fra4qv-0 jTtCeR"
+  />
+  <div
+    class="FilterMenu__FilterMenuContainer-sc-1fra4qv-1 cMfzVK"
+  >
+    <label
+      class="filter__menu-title"
+    >
+      <label
+        class="filter__menu-icon"
+      >
+        <strong>
+          +
+        </strong>
+      </label>
+      <strong>
+        Sort & Filter
+      </strong>
+    </label>
+    <div
+      class="filter__menu-filter-container "
+      data-testid="filter-menu"
+    >
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="WallFilter__WallFilterContainer-sc-1gmh8t7-0 dlCtk"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Wall Type
+            </strong>
+          </label>
+          <form>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Bouldering:
+              <input
+                name="bouldering"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Top Roping:
+              <input
+                name="top"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Lead:
+              <input
+                name="lead"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Auto Belay:
+              <input
+                name="auto"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Sort by distance
+            </strong>
+          </label>
+          <div
+            class="change-post-code-container"
+          >
+            
+            
+            <form
+              autocomplete="off"
+              class="filter__menu-sort-form visible"
+            >
+              <input
+                class="filter__menu-sort-input"
+                name="searchInput"
+                placeholder="Enter Postcode"
+                type="text"
+                value=""
+              />
+              <input
+                class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+                type="submit"
+                value="Set"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div
+    class="pages__WallCardOuterContainer-sc-4ksubj-0 ihKCbA"
+  >
+    <div
+      class="pages__WallCardInnerContainer-sc-4ksubj-1 khkCAu"
+    >
+      <div>
+        Loading Walls...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`pages index renders the component with a loading screen if no walls are available and user postcode is set 1`] = `
+<div>
+  <div
+    class="TopNav__NavBar-sc-1nw686k-0 dEnuba"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="clambr logo"
+        class="TopNav__MainLogo-sc-1nw686k-1 fcEOnI"
+        id="main-logo"
+        src="/clambr_logo_blue.png"
+      />
+    </a>
+    <div
+      class="TopNav__LoggedInDetails-sc-1nw686k-3 kjTTSP"
+    >
+      <p
+        class="nav-username"
+      >
+        Hi 
+        Old Captain Testy
+        !
+      </p>
+      <img
+        alt=""
+        data-testid="user-icon"
+        src="/login-icon.jpg"
+      />
+    </div>
+    <div
+      class="LoginMenu__LoginMenuContainer-sc-1ec36x2-0 guOatf  "
+    >
+      <div
+        class="login__menu-login-register"
+      >
+        <h5>
+          Log out
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div
+    class="SecondaryNav__NavBar-sc-1joq3q2-0 bbXYtC"
+  />
+  <div
+    class="FilterMenu__BackgroundFade-sc-1fra4qv-0 jTtCeR"
+  />
+  <div
+    class="FilterMenu__FilterMenuContainer-sc-1fra4qv-1 cMfzVK"
+  >
+    <label
+      class="filter__menu-title"
+    >
+      <label
+        class="filter__menu-icon"
+      >
+        <strong>
+          +
+        </strong>
+      </label>
+      <strong>
+        Sort & Filter
+      </strong>
+    </label>
+    <div
+      class="filter__menu-filter-container "
+      data-testid="filter-menu"
+    >
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="WallFilter__WallFilterContainer-sc-1gmh8t7-0 dlCtk"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Wall Type
+            </strong>
+          </label>
+          <form>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Bouldering:
+              <input
+                name="bouldering"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Top Roping:
+              <input
+                name="top"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Lead:
+              <input
+                name="lead"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Auto Belay:
+              <input
+                name="auto"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Sort by distance
+            </strong>
+          </label>
+          <div
+            class="change-post-code-container"
+          >
+            <p
+              class="postcode-confirmation"
+            >
+              Sorted by distance from 
+              <strong>
+                A11 1AA
+              </strong>
+            </p>
+            <span>
+              <p
+                class="changePostcode"
+              >
+                Change
+              </p>
+              <p
+                class="changePostcode"
+              >
+                Clear
+              </p>
+            </span>
+            <form
+              autocomplete="off"
+              class="filter__menu-sort-form "
+            >
+              <input
+                class="filter__menu-sort-input"
+                name="searchInput"
+                placeholder="Enter Postcode"
+                type="text"
+                value="A11 1AA"
+              />
+              <input
+                class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+                type="submit"
+                value="Set"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="pages__PostcodeDetails-sc-4ksubj-2 gJSXsH"
+  >
+    <p>
+      Sorted by distance from 
+      <strong>
+        A11 1AA
+      </strong>
+    </p>
+  </div>
+  <div
+    class="pages__WallCardOuterContainer-sc-4ksubj-0 gLOkOA"
+  >
+    <div
+      class="pages__WallCardInnerContainer-sc-4ksubj-1 khkCAu"
+    >
+      <div>
+        Loading Walls...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`pages index renders the component with wallcards and distance from postcode for each wall if walls are returned 1`] = `
+<div>
+  <div
+    class="TopNav__NavBar-sc-1nw686k-0 dEnuba"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="clambr logo"
+        class="TopNav__MainLogo-sc-1nw686k-1 fcEOnI"
+        id="main-logo"
+        src="/clambr_logo_blue.png"
+      />
+    </a>
+    <div
+      class="TopNav__LoggedInDetails-sc-1nw686k-3 kjTTSP"
+    >
+      <p
+        class="nav-username"
+      >
+        Hi 
+        Old Captain Testy
+        !
+      </p>
+      <img
+        alt=""
+        data-testid="user-icon"
+        src="/login-icon.jpg"
+      />
+    </div>
+    <div
+      class="LoginMenu__LoginMenuContainer-sc-1ec36x2-0 guOatf  "
+    >
+      <div
+        class="login__menu-login-register"
+      >
+        <h5>
+          Log out
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div
+    class="SecondaryNav__NavBar-sc-1joq3q2-0 bbXYtC"
+  />
+  <div
+    class="FilterMenu__BackgroundFade-sc-1fra4qv-0 jTtCeR"
+  />
+  <div
+    class="FilterMenu__FilterMenuContainer-sc-1fra4qv-1 cMfzVK"
+  >
+    <label
+      class="filter__menu-title"
+    >
+      <label
+        class="filter__menu-icon"
+      >
+        <strong>
+          +
+        </strong>
+      </label>
+      <strong>
+        Sort & Filter
+      </strong>
+    </label>
+    <div
+      class="filter__menu-filter-container "
+      data-testid="filter-menu"
+    >
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="WallFilter__WallFilterContainer-sc-1gmh8t7-0 dlCtk"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Wall Type
+            </strong>
+          </label>
+          <form>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Bouldering:
+              <input
+                name="bouldering"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Top Roping:
+              <input
+                name="top"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Lead:
+              <input
+                name="lead"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Auto Belay:
+              <input
+                name="auto"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Sort by distance
+            </strong>
+          </label>
+          <div
+            class="change-post-code-container"
+          >
+            <p
+              class="postcode-confirmation"
+            >
+              Sorted by distance from 
+              <strong>
+                A11 1AA
+              </strong>
+            </p>
+            <span>
+              <p
+                class="changePostcode"
+              >
+                Change
+              </p>
+              <p
+                class="changePostcode"
+              >
+                Clear
+              </p>
+            </span>
+            <form
+              autocomplete="off"
+              class="filter__menu-sort-form "
+            >
+              <input
+                class="filter__menu-sort-input"
+                name="searchInput"
+                placeholder="Enter Postcode"
+                type="text"
+                value="A11 1AA"
+              />
+              <input
+                class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+                type="submit"
+                value="Set"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="pages__PostcodeDetails-sc-4ksubj-2 gJSXsH"
+  >
+    <p>
+      Sorted by distance from 
+      <strong>
+        A11 1AA
+      </strong>
+    </p>
+  </div>
+  <div
+    class="pages__WallCardOuterContainer-sc-4ksubj-0 gLOkOA"
+  >
+    <div
+      class="pages__WallCardInnerContainer-sc-4ksubj-1 khkCAu"
+    >
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 1
+            </h5>
+            <h4>
+              (
+              1.5
+               miles)
+            </h4>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              <div
+                class="star-ratings"
+                style="position: relative; box-sizing: border-box; display: inline-block;"
+                title="3.67 Stars"
+              >
+                <svg
+                  class="star-grad"
+                  style="position: absolute; z-index: 0; width: 0px; height: 0px; visibility: hidden;"
+                >
+                  <defs>
+                    <lineargradient
+                      id="starGrad469371219611449"
+                      x1="0%"
+                      x2="100%"
+                      y1="0%"
+                      y2="0%"
+                    >
+                      <stop
+                        class="stop-color-first"
+                        offset="0%"
+                        style="stop-color: gold; stop-opacity: 1;"
+                      />
+                      <stop
+                        class="stop-color-first"
+                        offset="67%"
+                        style="stop-color: gold; stop-opacity: 1;"
+                      />
+                      <stop
+                        class="stop-color-final"
+                        offset="67%"
+                        style="stop-color: rgb(203, 211, 227); stop-opacity: 1;"
+                      />
+                      <stop
+                        class="stop-color-final"
+                        offset="100%"
+                        style="stop-color: rgb(203, 211, 227); stop-opacity: 1;"
+                      />
+                    </lineargradient>
+                  </defs>
+                </svg>
+                <div
+                  class="star-container"
+                  style="position: relative; display: inline-block; vertical-align: middle; padding-right: 0px;"
+                >
+                  <svg
+                    class="widget-svg"
+                    style="width: 20px; height: 20px; transition: transform .2s ease-in-out;"
+                    viewBox="0 0 51 48"
+                  >
+                    <path
+                      class="star"
+                      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                      style="fill: gold; transition: fill .2s ease-in-out;"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="star-container"
+                  style="position: relative; display: inline-block; vertical-align: middle; padding-left: 0px; padding-right: 0px;"
+                >
+                  <svg
+                    class="widget-svg"
+                    style="width: 20px; height: 20px; transition: transform .2s ease-in-out;"
+                    viewBox="0 0 51 48"
+                  >
+                    <path
+                      class="star"
+                      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                      style="fill: gold; transition: fill .2s ease-in-out;"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="star-container"
+                  style="position: relative; display: inline-block; vertical-align: middle; padding-left: 0px; padding-right: 0px;"
+                >
+                  <svg
+                    class="widget-svg"
+                    style="width: 20px; height: 20px; transition: transform .2s ease-in-out;"
+                    viewBox="0 0 51 48"
+                  >
+                    <path
+                      class="star"
+                      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                      style="fill: gold; transition: fill .2s ease-in-out;"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="star-container"
+                  style="position: relative; display: inline-block; vertical-align: middle; padding-left: 0px; padding-right: 0px;"
+                >
+                  <svg
+                    class="widget-svg multi-widget-selected"
+                    style="width: 20px; height: 20px; transition: transform .2s ease-in-out;"
+                    viewBox="0 0 51 48"
+                  >
+                    <path
+                      class="star"
+                      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                      style="fill: url('#starGrad469371219611449'); transition: fill .2s ease-in-out;"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="star-container"
+                  style="position: relative; display: inline-block; vertical-align: middle; padding-left: 0px;"
+                >
+                  <svg
+                    class="widget-svg"
+                    style="width: 20px; height: 20px; transition: transform .2s ease-in-out;"
+                    viewBox="0 0 51 48"
+                  >
+                    <path
+                      class="star"
+                      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                      style="fill: rgb(203, 211, 227); transition: fill .2s ease-in-out;"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 2
+            </h5>
+            <h4>
+              (
+              1.5
+               miles)
+            </h4>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              No ratings yet
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 3
+            </h5>
+            <h4>
+              (
+              1.5
+               miles)
+            </h4>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              No ratings yet
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="wall-card-placeholder"
+      />
+      <div
+        class="wall-card-placeholder"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`pages index renders the component with wallcards for each wall if walls are returned 1`] = `
+<div>
+  <div
+    class="TopNav__NavBar-sc-1nw686k-0 dEnuba"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="clambr logo"
+        class="TopNav__MainLogo-sc-1nw686k-1 fcEOnI"
+        id="main-logo"
+        src="/clambr_logo_blue.png"
+      />
+    </a>
+    <div
+      class="TopNav__LoggedInDetails-sc-1nw686k-3 kjTTSP"
+    >
+      <p
+        class="nav-username"
+      >
+        Hi 
+        Old Captain Testy
+        !
+      </p>
+      <img
+        alt=""
+        data-testid="user-icon"
+        src="/login-icon.jpg"
+      />
+    </div>
+    <div
+      class="LoginMenu__LoginMenuContainer-sc-1ec36x2-0 guOatf  "
+    >
+      <div
+        class="login__menu-login-register"
+      >
+        <h5>
+          Log out
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div
+    class="SecondaryNav__NavBar-sc-1joq3q2-0 bbXYtC"
+  />
+  <div
+    class="FilterMenu__BackgroundFade-sc-1fra4qv-0 jTtCeR"
+  />
+  <div
+    class="FilterMenu__FilterMenuContainer-sc-1fra4qv-1 cMfzVK"
+  >
+    <label
+      class="filter__menu-title"
+    >
+      <label
+        class="filter__menu-icon"
+      >
+        <strong>
+          +
+        </strong>
+      </label>
+      <strong>
+        Sort & Filter
+      </strong>
+    </label>
+    <div
+      class="filter__menu-filter-container "
+      data-testid="filter-menu"
+    >
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="WallFilter__WallFilterContainer-sc-1gmh8t7-0 dlCtk"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Wall Type
+            </strong>
+          </label>
+          <form>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Bouldering:
+              <input
+                name="bouldering"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Top Roping:
+              <input
+                name="top"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Lead:
+              <input
+                name="lead"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+            <label
+              class="filter__menu-checkbox"
+            >
+              Auto Belay:
+              <input
+                name="auto"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div
+        class="filter__menu-filter-item"
+      >
+        <div
+          class="PostcodeSort__PostcodeSortContainer-kmt73j-0 fmYhrI"
+        >
+          <label
+            class="filter__menu-form-heading"
+          >
+            <strong>
+              Sort by distance
+            </strong>
+          </label>
+          <div
+            class="change-post-code-container"
+          >
+            
+            
+            <form
+              autocomplete="off"
+              class="filter__menu-sort-form visible"
+            >
+              <input
+                class="filter__menu-sort-input"
+                name="searchInput"
+                placeholder="Enter Postcode"
+                type="text"
+                value=""
+              />
+              <input
+                class="PostcodeSort__SubmitButton-kmt73j-1 bfOvYG"
+                type="submit"
+                value="Set"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div
+    class="pages__WallCardOuterContainer-sc-4ksubj-0 ihKCbA"
+  >
+    <div
+      class="pages__WallCardInnerContainer-sc-4ksubj-1 khkCAu"
+    >
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 0
+            </h5>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              No ratings yet
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 1
+            </h5>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              No ratings yet
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 2
+            </h5>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              No ratings yet
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="WallCard__Card-sc-1uzo1sy-0 gsbJUd"
+      >
+        <a
+          href="/walls/test"
+        >
+          <div
+            class="WallCard__Heading-sc-1uzo1sy-1 hDrFCI"
+          >
+            <h5>
+              Test Wall 3
+            </h5>
+          </div>
+          <div
+            class="WallCard__ImageContainer-sc-1uzo1sy-2 cEFXNR"
+          >
+            <picture
+              class="wall-image"
+            >
+              <source
+                srcset="/testimageurl"
+                type="image/webp"
+              />
+              <source
+                srcset="/testimageurl"
+                type="image/jpeg"
+              />
+              <img
+                alt=""
+                class="wall-image"
+                src="/testimageurl"
+              />
+            </picture>
+          </div>
+          <div
+            class="WallCard__Content-sc-1uzo1sy-3 evoHFp"
+          >
+            <div
+              class="wall-details-1"
+            >
+              <p>
+                <strong>
+                  Location:
+                </strong>
+                 
+                test
+              </p>
+              <strong>
+                User Rating:
+              </strong>
+              <br />
+              No ratings yet
+              <strong>
+                <p
+                  style="color: red;"
+                >
+                  Bouldering Only
+                </p>
+              </strong>
+            </div>
+            <div
+              class="wall-details-2"
+            >
+              <p>
+                <strong>
+                  Weekdays:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                22:00
+              </p>
+              <p>
+                <strong>
+                  Weekends:
+                </strong>
+                <br />
+                Open: 
+                10:00
+                <br />
+                Close: 
+                21:00
+              </p>
+            </div>
+          </div>
+          <button
+            class="WallCard__Btn-sc-1uzo1sy-4 kMdqoT"
+          >
+            View Details and Reviews
+          </button>
+        </a>
+      </div>
+      <div
+        class="wall-card-placeholder"
+      />
+      <div
+        class="wall-card-placeholder"
+      />
+    </div>
+  </div>
+</div>
+`;
