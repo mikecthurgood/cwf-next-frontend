@@ -160,6 +160,32 @@
             "weekdayOpening": "10:00",
             "weekendClosing": "21:00",
             "weekendOpening": "10:00"
+        },
+        {
+            "addressLine1": "1 test street",
+            "addressLine2": "testville",
+            "addressLine3": "",
+            "auto": false,
+            "boulderingOnly": true,
+            "cafe": true,
+            "city": "London",
+            "description": "<p>Test description</p>",
+            "gym": true,
+            "id": "84",
+            "imageUrl": "/testimageurl",
+            "lead": false,
+            "name": "Test Wall 0",
+            "openingNotes": "",
+            "postcode": "test",
+            "region": "test",
+            "reviews": [],
+            "slug": "test",
+            "top": false,
+            "websiteUrl": "www.test,com",
+            "weekdayClosing": "22:00",
+            "weekdayOpening": "10:00",
+            "weekendClosing": "21:00",
+            "weekendOpening": "10:00"
         }
     ],
     "wallsToFilter": [    
