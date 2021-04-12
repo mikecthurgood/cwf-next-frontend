@@ -8,5 +8,5 @@ module.exports = {
         '<rootDir>/__tests__/**/*spec.js',
         '<rootDir>/src/**/*spec.js',
     ],
-    modulePathIgnorePatterns: ['__mocks__','__tests__','setupTests.js','setupFiles.js']
+    modulePathIgnorePatterns: ['__mocks__','setupTests.js','setupFiles.js']
 };
