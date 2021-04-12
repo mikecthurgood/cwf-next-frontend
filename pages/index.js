@@ -9,25 +9,20 @@ import WallCard from '../src/components/WallCard';
 import FilterMenu from '../src/components/Menus/SortAndFilterMenu';
 
 const Index = () => {
-    const { signOut, signUpSuccess, user, userPostCode, walls, filterSelection } = useContext(State)
+    const { userPostcode, walls, filterSelection } = useContext(State)
     const dispatch = useContext(Dispatch)
     useEffect(() => {
-        try{
-            fetchWalls(dispatch, userPostCode);
-        } catch (err) {
-            console.log(err)
-        }
-    }, [userPostCode])
+        fetchWalls(dispatch, userPostcode);
+    }, [userPostcode])
 
     let sortedWalls
-    if (userPostCode) {
-        sortedWalls = walls ? walls.sort((a, b) => Number(a.distance) - Number(b.distance)) : {};
+    if (userPostcode) {
+        sortedWalls = walls ? walls.sort((a, b) => Number(a.distance) - Number(b.distance)) : [];
     } else {
-        sortedWalls = walls ? walls.sort((a, b) => (a.name > b.name) ? 1 : -1) : {};
+        sortedWalls = walls ? walls.sort((a, b) => (a.name > b.name) ? 1 : -1) : [];
     }
 
     const filteredWalls = filterWalls(filterSelection, sortedWalls)
-
     return (
         <>
             <Head>
@@ -37,12 +32,12 @@ const Index = () => {
             <TopNav />
             <SecondaryNav />
             <FilterMenu />
-            {userPostCode && (
+            {userPostcode && (
                 <PostcodeDetails>
-                    <p>Sorted by distance from <strong>{userPostCode.toUpperCase()}</strong></p>
+                    <p>Sorted by distance from <strong>{userPostcode.toUpperCase()}</strong></p>
                 </PostcodeDetails>
             )}
-            <WallCardOuterContainer postcode={userPostCode}>
+            <WallCardOuterContainer postcode={userPostcode}>
                 <WallCardInnerContainer>
                     {filteredWalls.length === 0 && (<div>Loading Walls...</div>)}
                     {filteredWalls.length > 0 && filteredWalls.map(wall => 
@@ -56,8 +51,6 @@ const Index = () => {
         </>
     );
 };
-
-// Index.getInitialProps = async ({ res }) => ({ ...res.locals });
 
 export default Index;
 
