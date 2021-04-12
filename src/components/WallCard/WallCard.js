@@ -3,7 +3,7 @@ import StarRatings from 'react-star-ratings';
 import Link from 'next/link';
 import Styled from 'styled-components';
 
-const WallCard = ({ wall, setScrollPosition }) => (
+const WallCard = ({ wall }) => (
     <Card>
         <Link href={`/walls/${wall.slug}`}><a>
             <Heading>

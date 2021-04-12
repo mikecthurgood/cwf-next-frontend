@@ -1,5 +1,4 @@
-import React, {useState, useContext} from 'react';
-import { Dispatch, State } from '../../../store/Store';
+import React, {useState} from 'react';
 import Styled from 'styled-components';
 
 import WallFilter  from './WallFilter';
@@ -22,7 +21,7 @@ const FilterMenu = () => {
                 </label>
                     <strong>Sort & Filter</strong>
             </label>
-            <div className={`filter__menu-filter-container ${filterMenuVisible ? 'visible' : ''}`} >
+            <div data-testid='filter-menu' className={`filter__menu-filter-container ${filterMenuVisible ? 'visible' : ''}`} >
                 <div className='filter__menu-filter-item' >
                     <WallFilter />
                 </div>

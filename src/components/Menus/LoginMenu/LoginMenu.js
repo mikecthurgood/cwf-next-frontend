@@ -3,12 +3,16 @@ import Styled from 'styled-components';
 import { Dispatch, State } from '../../../store/Store';
 import AuthForm from '../../Form/Login';
 
-const LoginMenu = ({loginHandler, signupHandler}) => {
-    const { loginError, loginMenuToggle, user, loginMenuVisible } = useContext(State)
+const LoginMenu = () => {
+    const { user, loginMenuVisible } = useContext(State)
     const dispatch = useContext(Dispatch)
     const [loginVisible, setLoginVisible] = useState(false)
 
-    function loginToggle () {
+    function loginMenuToggle () {
+        dispatch({type: 'setLoginMenuVisible', data: !loginMenuVisible})
+    }
+    
+    function loginFormToggle () {
         setLoginVisible(!loginVisible)
     }
 
@@ -23,10 +27,10 @@ const LoginMenu = ({loginHandler, signupHandler}) => {
                 <h5 onClick={signOut}>Log out</h5>
                 :
                 (<>
-                    <h5 onClick={loginToggle}>Login</h5>
-                    <div className={`login__menu-auth__form ${loginVisible ? 'visible' : ''}`}>
+                    <h5 onClick={loginFormToggle} data-testid='login-form-control'>Login</h5>
+                    <AuthFormContainer className={loginVisible ? 'visible' : ''}>
                         <AuthForm layout={'compact'} />
-                    </div>
+                    </AuthFormContainer>
                     <a href='/signup'><h5 onClick={loginMenuToggle}>Register</h5></a>
                 </>)
                 }
@@ -76,4 +80,17 @@ const LoginMenuContainer = Styled.div`
 @media (min-width: 768px) {
   display: none;
 }
+`
+
+const AuthFormContainer = Styled.div`
+    position: relative;
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: max-height 0.25s ease-out; 
+    width: 100%;
+    &.visible {
+        max-height: 300px;
+        transition: max-height 0.45s ease-in; 
+    }
+
 `
