@@ -1,61 +1,53 @@
 import post from './Request';
 
-export const handleLogin = (authData) => {
-    const promise = new Promise((resolve, reject) => {
-        const { email, password } = authData.submitData
-        const graphqlQuery = {
-          query: `
-            query LoginUser($email: String!, $password: String!){
-              login(
-                email: $email,
-                password: $password
-              ) {
-                token
-                userId
-                username
-              }
+export const handleLogin = async (authData) => {
+    const { email, password } = authData.submitData
+    const graphqlQuery = {
+        query: `
+        query LoginUser($email: String!, $password: String!){
+            login(
+            email: $email,
+            password: $password
+            ) {
+            token
+            userId
+            username
             }
-          `,
-          variables: {
-            email: email,
-            password: password
-          }
         }
-          post(graphqlQuery)
-          .then(res => {
-            return res.data;
-          })
-          .then(resData => {
-            if (resData.errors && resData.errors.length > 0 && resData.errors[0].status === 422) {
-              throw new Error('Validation failed.');
-            }
-            if (resData.errors && resData.errors.length > 0) {
-              throw new Error('Could not authenticate you!');
-            }
-        
-            localStorage.setItem('token', resData.data.login.token);
-            localStorage.setItem('userId', resData.data.login.userId);
-            localStorage.setItem('userName', resData.data.login.username);
-    
-            resolve ({
-              isAuth: true,
-              token: resData.data.login.token,
-              userId: resData.data.login.userId,
-              username: resData.data.login.username
-            });
-    
-          })
-          .catch(err => {
-            console.log(err);
-            resolve ({
-              isAuth: false,
-              authLoading: false,
-              error: err
-            });
-          });
-        });
-        return promise
-      }
+        `,
+        variables: {
+        email: email,
+        password: password
+        }
+    }
+        try {
+        const res = await post(graphqlQuery);
+        const resData = res.data;
+        if (resData.errors && resData.errors.length > 0 && resData.errors[0].status === 422) {
+            throw new Error('Validation failed.');
+        }
+        if (resData.errors && resData.errors.length > 0) {
+            throw new Error('Could not authenticate you!');
+        }
+
+        localStorage.setItem('token', resData.data.login.token);
+        localStorage.setItem('userId', resData.data.login.userId);
+        localStorage.setItem('userName', resData.data.login.username);
+        return {
+            isAuth: true,
+            token: resData.data.login.token,
+            userId: resData.data.login.userId,
+            username: resData.data.login.username
+        };
+    } catch (err) {
+        console.log(err);
+        return {
+            isAuth: false,
+            authLoading: false,
+            error: err
+        };
+    }
+}
 
 //  export const handleSignup = async (authData) => {
 //     const promise = new Promise( async (resolve, reject) => {
