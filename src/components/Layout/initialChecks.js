@@ -3,7 +3,7 @@ export default function checkUserData (dispatch) {
     const userId = localStorage.getItem('userId')
     const username = localStorage.getItem('userName')
     const postcode = localStorage.getItem('userPostcode')
-    if (postcode) dispatch({ type: 'setPostCode', data: postcode })
+    if (postcode) dispatch({ type: 'setPostcode', data: postcode })
     if (!token) {
         return;
     }
