@@ -12,7 +12,7 @@ const initialState = {
     singleWall: {},
     sortInputVisible: false,
     user: { username: null, userId: null, isAuth: false, token: '' },
-    userPostCode: '',
+    userPostcode: '',
     walls: [],
 }
 

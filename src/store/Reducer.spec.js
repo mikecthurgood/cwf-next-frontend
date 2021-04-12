@@ -99,12 +99,12 @@ describe('Reducer', () => {
         expect(updatedState.user.token).toEqual('123456789');
     });
 
-    it('should use setPostCode to set a postcode', () => {
+    it('should use setPostcode to set a postcode', () => {
         expect(Reducer(state, {
-            type: 'setPostCode',
+            type: 'setPostcode',
             data: 'se1 1aa',
         })).toEqual({
-            ...state, userPostCode: 'se1 1aa'
+            ...state, userPostcode: 'se1 1aa'
         });
     });
 

@@ -17,8 +17,8 @@ const reducer = (state, action) => {
             return { ...state, singleWall: action.data}
         case 'setUser':
             return { ...state, user: action.data}
-        case 'setPostCode':
-            return { ...state, userPostCode: action.data}
+        case 'setPostcode':
+            return { ...state, userPostcode: action.data}
         case 'setWalls':
             return { ...state, walls: action.data}
         case 'signOut' :
