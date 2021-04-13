@@ -4,6 +4,7 @@ import {render, cleanup} from '@testing-library/react';
 import wallsData from '../mockWalls.json';
 import { State, Dispatch } from  '../../src/store/Store';
 
+jest.mock('react-star-ratings')
 jest.mock('../../src/services/helpers/WallHelpers');
 jest.mock('../../src/services/api/WallQueries.js');
 
